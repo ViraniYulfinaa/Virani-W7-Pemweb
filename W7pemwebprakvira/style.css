@@ -1,0 +1,261 @@
+/* =============================
+   WARNA TEMA & GAYA 
+============================= */
+:root {
+    --pink-main: #ffb6c1;
+    --pink-dark: #ff69b4;
+    --pink-light: #ffe4ec;
+    --white: #fff;
+    --gray-text: #555;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: var(--pink-light);
+    color: var(--gray-text);
+}
+
+/* =============================
+   HEADER
+============================= */
+header {
+    background: linear-gradient(to right, var(--pink-main), var(--pink-dark));
+    color: var(--white);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff8f8;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--white);
+    border-bottom: 3px solid var(--pink-main);
+}
+
+.hero h2 {
+    color: var(--pink-dark);
+    font-size: 26px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#btnPromo {
+    background-color: var(--pink-main);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btnPromo:hover {
+    background-color: var(--pink-dark);
+    transform: scale(1.05);
+}
+
+/* =============================
+   PRODUK SECTION
+============================= */
+.produk-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.produk-container h2 {
+    color: var(--pink-dark);
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.produk-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.produk-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+    padding: 20px;
+    width: 230px;
+    transition: transform 0.3s ease;
+}
+
+.produk-item:hover {
+    transform: translateY(-5px);
+}
+
+.produk-item h3 {
+    margin: 5px 0;
+    color: var(--pink-dark);
+}
+
+.produk-item p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.produk-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.btnBeli {
+    background-color: var(--pink-main);
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btnBeli:hover {
+    background-color: var(--pink-dark);
+}
+
+/* =============================
+   FORM PEMESANAN
+============================= */
+.form-pemesanan {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--white);
+    border-top: 3px solid var(--pink-main);
+    border-bottom: 3px solid var(--pink-main);
+}
+
+.form-pemesanan h2 {
+    color: var(--pink-dark);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#formPesan {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--pink-light);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+}
+
+#formPesan label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--gray-text);
+    text-align: left;
+}
+
+#formPesan input,
+#formPesan select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+#formPesan button {
+    margin-top: 15px;
+    background-color: var(--pink-main);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#formPesan button:hover {
+    background-color: var(--pink-dark);
+}
+
+/* =============================
+   KONTAK INFO
+============================= */
+#kontak {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 15px;
+    background-color: var(--pink-light);
+}
+
+#kontak h3 {
+    font-size: 18px;
+    color: var(--pink-dark);
+    margin-bottom: 15px;
+}
+
+.kontak-info p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.kontak-info a {
+    color: var(--pink-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.kontak-info a:hover {
+    text-decoration: underline;
+}
+
+/* =============================
+   FOOTER 
+============================= */
+footer {
+    background-color: var(--pink-dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    margin-top: 40px;
+    border-top: 3px solid var(--pink-main);
+}
+
